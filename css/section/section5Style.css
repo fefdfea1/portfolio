@@ -125,6 +125,10 @@
   .project {
     width: 75%;
   }
+
+  .fourSection.sectionPadding {
+    padding: 50px 20px;
+  }
 }
 
 @media (max-width: 1000px) {

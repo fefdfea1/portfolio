@@ -37,7 +37,7 @@
 .archive ol {
   margin-left: 20px;
   margin-top: 20px;
-  line-height: 3;
+  line-height: 2;
 }
 
 .archive ul,
@@ -48,5 +48,8 @@ ol {
 .archive li {
   font-size: 1.1rem;
   font-weight: 600;
-  white-space: nowrap;
+}
+
+.archive li:not(.archive li:nth-of-type(1)) {
+  margin-top: 20px;
 }
