@@ -1,0 +1,52 @@
+.fourSection {
+  background-color: var(--fourSection);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fourSection h2 {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.ArchivingTitleFont {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.articleBox {
+  display: flex;
+  column-gap: 130px;
+}
+
+.archive {
+  background-color: var(--white);
+  padding: 50px 40px;
+  border-radius: 15px;
+}
+
+.archive a {
+  color: skyblue;
+  display: block;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.archive ol {
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 3;
+}
+
+.archive ul,
+ol {
+  list-style: disc;
+}
+
+.archive li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

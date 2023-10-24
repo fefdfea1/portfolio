@@ -1,0 +1,235 @@
+.fiveSection {
+  background-color: var(--fiveSection);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lastSection {
+  color: var(--white);
+  margin-bottom: 60px;
+}
+
+.project {
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.project h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.project > p {
+  color: var(--ProjectSubTitle);
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+
+.projectDescBox {
+  width: 100%;
+  display: flex;
+  column-gap: 10%;
+}
+
+.projectImgBox {
+  width: 50%;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ProjectDescArea {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ProjectDescArea p {
+  width: 100%;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.contour {
+  width: 100%;
+  height: 1px;
+  background-color: var(--ProjectSubTitle);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+.projectDetailStyle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.projectDetailStyle:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.projectDetailStyle span {
+  font-size: 1.1rem;
+}
+
+.projectDetailStyle span:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.projectDetailStyle span a {
+  color: blue;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1280px) {
+  .MyInfoArea {
+    width: 80%;
+  }
+
+  .archive {
+    padding: 40px 20px;
+  }
+
+  .articleBox {
+    column-gap: 50px;
+  }
+  .gridContainer {
+    column-gap: 50px;
+  }
+
+  .ArchivingTitleFont {
+    font-size: 1.8rem;
+  }
+
+  .archive a {
+    font-size: 0.9rem;
+  }
+
+  .archive ol li {
+    font-size: 0.9rem;
+  }
+
+  .project {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gridContainer {
+    grid-template-areas:
+      "front backend ."
+      "front deployment ."
+      "Communication versionControl .";
+    grid-template-columns: repeat(2, 280px);
+  }
+
+  .deploy {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 765px) {
+  .MyInfoArea {
+    width: 95%;
+  }
+  .articleBox {
+    flex-direction: column;
+  }
+
+  .archive:not(.archive:first-of-type) {
+    margin-top: 50px;
+  }
+
+  .projectDescBox {
+    flex-direction: column;
+  }
+
+  .projectImgBox {
+    width: 100%;
+  }
+  .ProjectDescArea {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 475px) {
+  .headerNav .title {
+    display: none;
+  }
+
+  .TitleFont {
+    font-size: 2.5rem;
+  }
+
+  .Desc::before {
+    bottom: -20px;
+  }
+
+  .DescArea div {
+    font-size: 0.9rem;
+  }
+
+  .infoCenter i {
+    margin-right: 40px;
+  }
+
+  .MyInfoArea {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .gridContainer {
+    grid-template-areas:
+      "front"
+      "backend"
+      "deployment"
+      "versionControl"
+      "Communication";
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(6, minmax(100px, auto));
+  }
+
+  .backend {
+    margin-top: 60px;
+  }
+
+  .deployment {
+    margin-top: 15px;
+  }
+
+  .versionControl {
+    margin-top: 15px;
+  }
+
+  .ArchivingTitleFont {
+    font-style: 1.3rem;
+  }
+
+  .archive a {
+    font-size: 0.7rem;
+  }
+
+  .archive ol li {
+    font-size: 0.6rem;
+  }
+
+  .project {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 10px;
+  }
+}

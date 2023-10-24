@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(112, 93, 80, 0.8) 0,
+      rgba(112, 93, 80, 0.8) 90%
+    ),
+    url(../../img/section1Bg.jpg) 50% no-repeat;
+
+  background-size: cover;
+}
+
+.headerNav {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--grayColor);
+}
+
+.title h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.anchor ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anchor ul li {
+  font-weight: bold;
+}
+
+.anchor ul li a {
+  color: var(--grayColor);
+}
+
+.anchor ul li:not(li:last-of-type) {
+  margin-right: 30px;
+}
+
+.DescArea {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  line-height: 1.5;
+}
+
+.Desc {
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.Desc::before {
+  content: "";
+  width: 80px;
+  height: 6px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background: var(--underBar);
+}
+
+.DescArea div {
+  width: 100%;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: var(--grayColor);
+}
+
+.DescArea span {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.DescArea p:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.more {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: var(--moreBtn);
+  padding: 20px 20px;
+}
+
+.more a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}

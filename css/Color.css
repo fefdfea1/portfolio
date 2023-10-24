@@ -1,0 +1,8 @@
+:root {
+  --grayColor: hsla(0, 0%, 100%, 0.7);
+  --DescTitleColor: #333333;
+  --DescDetailColor: #999999;
+  --skillTitle: #e8673e;
+  --ProjectSubTitle: #b3b7bb;
+  --emphasis: #b94f72;
+}

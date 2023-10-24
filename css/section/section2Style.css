@@ -1,0 +1,80 @@
+.AboutMe {
+  position: relative;
+}
+
+.AboutMe h2 {
+  position: relative;
+  text-align: center;
+}
+
+.AboutMe h2::before {
+  content: "";
+  width: 210px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  background-color: var(--grayBg);
+}
+
+.MyInfoArea {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoCenter {
+  width: 33%;
+  height: 33.333%;
+  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCenter p span {
+  display: block;
+  white-space: nowrap;
+}
+
+.infoCenter i {
+  width: 10%;
+  height: 100%;
+  display: block;
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+
+.infoCenter p {
+  width: 60%;
+  line-height: 1.4;
+}
+
+.infoCenter p span:nth-of-type(1) {
+  margin-right: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--DescTitleColor);
+}
+
+.infoCenter p span:nth-of-type(2) {
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--DescDetailColor);
+}
