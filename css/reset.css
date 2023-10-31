@@ -45,7 +45,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -146,7 +145,6 @@ a:visited {
 
 img {
   width: 100%;
-  height: 100%;
 }
 .TitleFont {
   position: relative;
@@ -178,4 +176,24 @@ img {
 .textBold {
   font-weight: bold;
   color: var(--emphasis);
+}
+
+.relative {
+  position: relative;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.listStyleDisc {
+  list-style: disc;
 }

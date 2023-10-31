@@ -42,9 +42,6 @@
 
 .projectImgBox {
   width: 50%;
-  height: 450px;
-  border-radius: 15px;
-  overflow: hidden;
 }
 
 .ProjectDescArea {
@@ -56,7 +53,7 @@
 
 .ProjectDescArea p {
   width: 100%;
-  line-height: 1.8;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -92,6 +89,23 @@
 .projectDetailStyle span a {
   color: blue;
   font-size: 0.9rem;
+}
+
+.projectNumberOfParticipants {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: var(--ProjectSubTitle);
+  font-size: 1.1rem;
+}
+
+.myRole {
+  line-height: 1.6;
+}
+
+.projectDescLineHeight {
+  line-height: 1.4;
 }
 
 @media (max-width: 1280px) {
@@ -168,6 +182,20 @@
     width: 100%;
     margin-top: 60px;
   }
+
+  .Cooperation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CooperationArticle h3 {
+    margin-bottom: 20px;
+  }
+
+  .projectNumberOfParticipants {
+    position: static;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 475px) {
@@ -180,7 +208,7 @@
   }
 
   .Desc::before {
-    bottom: 65px;
+    bottom: -20px;
   }
 
   .DescArea div {
@@ -235,5 +263,13 @@
     width: 100%;
     box-sizing: border-box;
     padding: 40px 10px;
+  }
+
+  .project p {
+    font-size: 0.8rem;
+  }
+
+  .projectNumberOfParticipants {
+    font-size: 0.8rem;
   }
 }
