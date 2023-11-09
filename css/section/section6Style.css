@@ -1,5 +1,21 @@
+.Sixsection {
+  background-color: var(--sixSection);
+}
+
 .contectBox {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contectText p span:nth-of-type(1) {
+  color: black;
+}
+.contectText p span:nth-of-type(2) {
+  color: black;
+}
+
+.Sixsection .TitleFont::before {
+  background-color: var(--blackBg);
 }
